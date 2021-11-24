@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="24" time="0">
+    <testcase classname="For Sharekhan Automation" name="Verify sharekhan launched in chrome" time="0">
+        <system-out>
+            <![CDATA[Given I open chrome.........................................................skipped
+Then I entered url as "https://www.sharekhan.com/" in browser...............skipped
+Then I verify Title and Menu Items..........................................skipped
+Then I verify Lgin/Trade button.............................................skipped
+Then I close the browser....................................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="For Sharekhan Automation" name="To automate Sharekhan main menu" time="0">
+        <system-out>
+            <![CDATA[Given I open chrome.........................................................skipped
+Then I entered url as "https://www.sharekhan.com/" in browser...............skipped
+Then I click on main menu...................................................skipped
+And I verify Main menu options..............................................skipped
+Then I close the browser....................................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="For Sharekhan Menu Automation" name="Verify sharekhan menu displays after mouse hover" time="0">
+        <system-out>
+            <![CDATA[Given I open chrome.........................................................skipped
+Then I entered url as "https://www.sharekhan.com/" in browser...............skipped
+Then I Mouse hover on Market,New to Market..................................skipped
+Then I verify Market,new to market menu options.............................skipped
+Then I mouse Hover on Super Investor and Active trader......................skipped
+Then I verify Super Investor and Active trader menu options.................skipped
+Then I close the browser....................................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="For Sharekhan Menu Automation" name="Verify sharekhan Login" time="0">
+        <system-out>
+            <![CDATA[Given I open chrome.........................................................skipped
+Then I entered url as "https://www.sharekhan.com/" in browser...............skipped
+Then I Entered loginid......................................................skipped
+Then I click on next and entered password as "Bangar@2".....................skipped
+Then I verify All menus.....................................................skipped
+Then I close the browser....................................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan website Automation" name="Validate Account Page" time="0">
+        <system-out>
+            <![CDATA[Given user logs into sharekhan account......................................skipped
+Then User Click on Account menu Button......................................skipped
+Then he verified all menus on account page..................................skipped
+Then User logged out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan website Automation" name="Validate Marketwatch Menu Page" time="0">
+        <system-out>
+            <![CDATA[Given user logs into sharekhan account......................................skipped
+Then User Click on MarketWatch menu.........................................skipped
+Then User verified MyWatchlist..............................................skipped
+Then User verified Option Chain.............................................skipped
+Then User verified MarketWatch is highlighted...............................skipped
+Then User logged out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan website Automation" name="Validate Trade Now Menu Page" time="0">
+        <system-out>
+            <![CDATA[Given user logs into sharekhan account......................................skipped
+Then User Click on Trade Now menu...........................................skipped
+Then User verified Trade now page's menu bar................................skipped
+Then User verified all fields on trade now page.............................skipped
+Then User verified All default options......................................skipped
+Then User logged out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan website Automation" name="Validate Reports Menu Page" time="0">
+        <system-out>
+            <![CDATA[Given user logs into sharekhan account......................................skipped
+Then User Click on Reports menu.............................................skipped
+Then User validate deafault options.........................................skipped
+Then User verifies headers and all links are displayed......................skipped
+Then User logged out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan website Automation" name="Automate Fund Transfer" time="0">
+        <system-out>
+            <![CDATA[Given user logs into sharekhan account......................................skipped
+Then User Click on Account menu Button......................................skipped
+Then User enters 10 rs to transfer the fund.................................skipped
+Then User selects netbanking as payment mode and clicked submit button......skipped
+Then User enters details on bank login page and transefered the cash........skipped
+Then User logged out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan website Automation" name="Automate Cash Transfer Options" time="0">
+        <system-out>
+            <![CDATA[Given user logs into sharekhan account......................................skipped
+Then User Click on Account menu Button......................................skipped
+Then User verifies select segment's default value...........................skipped
+Then User selects Bank to IPO cash transfer.................................skipped
+Then User selects Bank to mutual fund cash transfer.........................skipped
+Then User logged out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan website Automation" name="Validate select segment of Cash Transfer" time="0">
+        <system-out>
+            <![CDATA[Given user logs into sharekhan account......................................skipped
+Then User Click on Account menu Button......................................skipped
+Then User verifies all select segment's drop down values....................skipped
+Then User logged out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan operations automation feature" name="Automate Adding virtual portfolio" time="0">
+        <system-out>
+            <![CDATA[Given user loggs into sharekhan account.....................................skipped
+When User clicks view detailed portfolio....................................skipped
+And user clicks add virtual portfolio.......................................skipped
+Then User enter portfolio name as "Demo" and click add folder...............skipped
+Then User verifies Addded folder............................................skipped
+And User clicks Add script in portfolio.....................................skipped
+Then User enters values in script and add the script........................skipped
+Then User Added more scripts with details...................................skipped
+Then User logged out of aplication..........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan operations automation feature" name="Automate delete scrip" time="0">
+        <system-out>
+            <![CDATA[Given user loggs into sharekhan account.....................................skipped
+Then user clicks delete scrip...............................................skipped
+Then User validate alert and click ok button................................skipped
+Then user validate stock gets deleted.......................................skipped
+Then User logged out of aplication..........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan operations automation feature" name="Automate delete virtual portfolio" time="0">
+        <system-out>
+            <![CDATA[Given user loggs into sharekhan account.....................................skipped
+Then user clicks virtual portfolio and click delete folder..................skipped
+Then User validate folder deleted successfully..............................skipped
+Then user validate folder does not appear...................................skipped
+Then User logged out of aplication..........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan operations automation feature" name="Automate Add watchlist in Marketwatch menu" time="0">
+        <system-out>
+            <![CDATA[Given user loggs into sharekhan account.....................................skipped
+Then user clicks Marketwatch menu and clicks create watchlist button........skipped
+Then User created watchist name as "DEMOWATCH" and verified.................skipped
+Then user add scrip to watchlist and verified added successfully............skipped
+Then user added few more scrips.............................................skipped
+Then User logged out of aplication..........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan operations automation feature" name="Automate delete scrip from watchlist" time="0">
+        <system-out>
+            <![CDATA[Given user loggs into sharekhan account.....................................skipped
+Then user clicks Marketwatch menu...........................................skipped
+Then User sects scrip to delete.............................................skipped
+Then user click delete scrip and verify its deleted.........................skipped
+Then User logged out of aplication..........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan operations automation feature" name="Automate delete watchlist" time="0">
+        <system-out>
+            <![CDATA[Given user loggs into sharekhan account.....................................skipped
+Then user clicks Marketwatch menu...........................................skipped
+Then User clicks delete waltchlist..........................................skipped
+Then user verified scrip is deleted.........................................skipped
+Then user verified Marketwatch is highlighted and my watchlist is underlined.skipped
+Then User logged out of aplication..........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sharekhan operations automation feature" name="Automate My portfolio" time="0">
+        <system-out>
+            <![CDATA[Given user loggs into sharekhan account.....................................skipped
+Then User clicks on my portfolio............................................skipped
+Then user verified the heading “MY PORTFOLIO”...............................skipped
+Then user verified tabs “SUMMARY”, “EQUITY”, “MUTUAL FUND” & “VIRTUAL PORTFOLIO”.skipped
+Then User logged out of aplication..........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Autmate sharekhan process" name="Automate Tooltip text" time="0">
+        <system-out>
+            <![CDATA[Given User is on home page after login......................................skipped
+Then user verify MyWatchList tooltip........................................skipped
+Then user verify MyPortfolio tooltip........................................skipped
+Then user verify Investment cart............................................skipped
+Then user verified Alert....................................................skipped
+Then User signed out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Autmate sharekhan process" name="Automate Tooltip text" time="0">
+        <system-out>
+            <![CDATA[Given User is on home page after login......................................skipped
+Then user clicked on Trade now button.......................................skipped
+Then user searched and selects Opto Circuits scrip..........................skipped
+Then user entered values in all fields......................................skipped
+Then user click on place order..............................................skipped
+Then user validate all fields...............................................skipped
+Then User signed out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Autmate sharekhan process" name="Automate LIMIT BUY ORDER" time="0">
+        <system-out>
+            <![CDATA[Given User is on home page after login......................................skipped
+Then user clicked on Trade now button.......................................skipped
+Then user searched and selects Opto Circuits scrip..........................skipped
+Then user entered values in all fields......................................skipped
+Then user click on place order..............................................skipped
+Then user validate all fields...............................................skipped
+Then User signed out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Autmate sharekhan process" name="Automate place a sell order" time="0">
+        <system-out>
+            <![CDATA[Given User is on home page after login......................................skipped
+Then user clicked on Trade now button.......................................skipped
+Then user searched and selects Opto Circuits scrip..........................skipped
+Then user entered values in all fields......................................skipped
+Then user entered values in all fields with sell............................skipped
+Then user click on place order..............................................skipped
+Then User signed out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Autmate sharekhan process" name="Automate renaming virtual portfolio" time="0">
+        <system-out>
+            <![CDATA[Given User is on home page after login......................................skipped
+Then user clicked detailed view of portfolio................................skipped
+Then user renamed the virtual portfoilo.....................................skipped
+Then User signed out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Autmate sharekhan process" name="Automate renaming watchlist" time="0">
+        <system-out>
+            <![CDATA[Given User is on home page after login......................................skipped
+Then user clicked on the Marketwatch menu...................................skipped
+Then user renamed a watchlist...............................................skipped
+Then user verified renamed watchlist........................................skipped
+Then User signed out of application.........................................skipped
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

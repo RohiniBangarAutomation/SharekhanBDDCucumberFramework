@@ -1,0 +1,2165 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "I open chrome",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_open_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I entered url as \"https://www.sharekhan.com/\" in browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.sharekhan.com/",
+                  "offset": 18
+                }
+              ],
+              "location": "SharekhanLaunchStepDef.i_entered_url_as_in_browser(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Verify sharekhan launched in chrome",
+        "description": "",
+        "id": "for-sharekhan-automation;verify-sharekhan-launched-in-chrome",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I verify Title and Menu Items",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_verify_Title_and_Menu_Items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I verify Lgin/Trade button",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_verify_Lgin_Trade_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I close the browser",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Ass1"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "I open chrome",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_open_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I entered url as \"https://www.sharekhan.com/\" in browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.sharekhan.com/",
+                  "offset": 18
+                }
+              ],
+              "location": "SharekhanLaunchStepDef.i_entered_url_as_in_browser(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "To automate Sharekhan main menu",
+        "description": "",
+        "id": "for-sharekhan-automation;to-automate-sharekhan-main-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I click on main menu",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_click_on_main_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I verify Main menu options",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_verify_Main_menu_options()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I close the browser",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@Ass2"
+          }
+        ]
+      }
+    ],
+    "name": "For Sharekhan Automation",
+    "description": "",
+    "id": "for-sharekhan-automation",
+    "keyword": "Feature",
+    "uri": "1SharekhanLaunch.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "I open chrome",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_open_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I entered url as \"https://www.sharekhan.com/\" in browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.sharekhan.com/",
+                  "offset": 18
+                }
+              ],
+              "location": "SharekhanLaunchStepDef.i_entered_url_as_in_browser(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Verify sharekhan menu displays after mouse hover",
+        "description": "",
+        "id": "for-sharekhan-menu-automation;verify-sharekhan-menu-displays-after-mouse-hover",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I Mouse hover on Market,New to Market",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_Mouse_hover_on_Market_New_to_Market()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I verify Market,new to market menu options",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_verify_Market_new_to_market_menu_options()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I mouse Hover on Super Investor and Active trader",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_mouse_Hover_on_Super_Investor_and_Active_trader()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I verify Super Investor and Active trader menu options",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_verify_Super_Investor_and_Active_trader_menu_options()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I close the browser",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Ass3"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "I open chrome",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_open_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I entered url as \"https://www.sharekhan.com/\" in browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.sharekhan.com/",
+                  "offset": 18
+                }
+              ],
+              "location": "SharekhanLaunchStepDef.i_entered_url_as_in_browser(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Verify sharekhan Login",
+        "description": "",
+        "id": "for-sharekhan-menu-automation;verify-sharekhan-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I Entered loginid",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_Entered_loginid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I click on next and entered password as \"Bangar@2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bangar@2",
+                  "offset": 41
+                }
+              ],
+              "location": "SharekhanLaunchStepDef.i_click_on_next_and_entered_password_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I verify All menus",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_verify_All_menus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I close the browser",
+            "match": {
+              "location": "SharekhanLaunchStepDef.i_close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Ass4"
+          }
+        ]
+      }
+    ],
+    "name": "For Sharekhan Menu Automation",
+    "description": "",
+    "id": "for-sharekhan-menu-automation",
+    "keyword": "Feature",
+    "uri": "2MenuMouseHover.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user logs into sharekhan account",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Validate Account Page",
+        "description": "",
+        "id": "sharekhan-website-automation;validate-account-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User Click on Account menu Button",
+            "match": {
+              "location": "SharekhanAssignSteps.user_Click_on_Account_menu_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "he verified all menus on account page",
+            "match": {
+              "location": "SharekhanAssignSteps.he_verified_all_menus_on_account_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User logged out of application",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Ass5"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user logs into sharekhan account",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Validate Marketwatch Menu Page",
+        "description": "",
+        "id": "sharekhan-website-automation;validate-marketwatch-menu-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User Click on MarketWatch menu",
+            "match": {
+              "location": "SharekhanAssignSteps.user_Click_on_MarketWatch_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User verified MyWatchlist",
+            "match": {
+              "location": "SharekhanAssignSteps.user_verified_MyWatchlist()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User verified Option Chain",
+            "match": {
+              "location": "SharekhanAssignSteps.user_verified_Option_Chain()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User verified MarketWatch is highlighted",
+            "match": {
+              "location": "SharekhanAssignSteps.user_verified_MyWatchlist_is_highlighted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User logged out of application",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Ass6"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user logs into sharekhan account",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Validate Trade Now Menu Page",
+        "description": "",
+        "id": "sharekhan-website-automation;validate-trade-now-menu-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User Click on Trade Now menu",
+            "match": {
+              "location": "SharekhanAssignSteps.user_Click_on_Trade_Now_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User verified Trade now page\u0027s menu bar",
+            "match": {
+              "location": "SharekhanAssignSteps.user_verified_Trade_now_page_s_menu_bar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "User verified all fields on trade now page",
+            "match": {
+              "location": "SharekhanAssignSteps.user_verified_all_fields_on_trade_now_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "User verified All default options",
+            "match": {
+              "location": "SharekhanAssignSteps.user_verified_All_default_options()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User logged out of application",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@Ass7"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user logs into sharekhan account",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Validate Reports Menu Page",
+        "description": "",
+        "id": "sharekhan-website-automation;validate-reports-menu-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User Click on Reports menu",
+            "match": {
+              "location": "SharekhanAssignSteps.user_Click_on_Reports_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User validate deafault options",
+            "match": {
+              "location": "SharekhanAssignSteps.user_validate_deafault_options()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "User verifies headers and all links are displayed",
+            "match": {
+              "location": "SharekhanAssignSteps.user_verifies_headers_and_all_links_are_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "User logged out of application",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 28,
+            "name": "@Ass8"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user logs into sharekhan account",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Automate Fund Transfer",
+        "description": "",
+        "id": "sharekhan-website-automation;automate-fund-transfer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "User Click on Account menu Button",
+            "match": {
+              "location": "SharekhanAssignSteps.user_Click_on_Account_menu_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "User enters 10 rs to transfer the fund",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 12
+                }
+              ],
+              "location": "SharekhanAssignSteps.user_enters_rs_to_transfer_the_fund(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "User selects netbanking as payment mode and clicked submit button",
+            "match": {
+              "location": "SharekhanAssignSteps.user_selects_netbanking_as_payment_mode_and_clicked_submit_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "User enters details on bank login page and transefered the cash",
+            "match": {
+              "location": "SharekhanAssignSteps.user_enters_details_on_bank_login_page_and_transefered_the_cash()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "User logged out of application",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 35,
+            "name": "@Ass9"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user logs into sharekhan account",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Automate Cash Transfer Options",
+        "description": "",
+        "id": "sharekhan-website-automation;automate-cash-transfer-options",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "User Click on Account menu Button",
+            "match": {
+              "location": "SharekhanAssignSteps.user_Click_on_Account_menu_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "User verifies select segment\u0027s default value",
+            "match": {
+              "location": "SharekhanAssignSteps.user_verifies_select_segment_s_default_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "User selects Bank to IPO cash transfer",
+            "match": {
+              "location": "SharekhanAssignSteps.user_selects_Bank_to_IPO_cash_transfer()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "User selects Bank to mutual fund cash transfer",
+            "match": {
+              "location": "SharekhanAssignSteps.user_selects_Bank_to_mutual_fund_cash_transfer()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "User logged out of application",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 43,
+            "name": "@Ass10"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "user logs into sharekhan account",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 52,
+        "name": "Validate select segment of Cash Transfer",
+        "description": "",
+        "id": "sharekhan-website-automation;validate-select-segment-of-cash-transfer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "User Click on Account menu Button",
+            "match": {
+              "location": "SharekhanAssignSteps.user_Click_on_Account_menu_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "User verifies all select segment\u0027s drop down values",
+            "match": {
+              "location": "SharekhanAssignSteps.user_verifies_all_select_segment_s_drop_down_values()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "User logged out of application",
+            "match": {
+              "location": "SharekhanAssignSteps.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 51,
+            "name": "@Ass11"
+          }
+        ]
+      }
+    ],
+    "name": "Sharekhan website Automation",
+    "description": "",
+    "id": "sharekhan-website-automation",
+    "keyword": "Feature",
+    "uri": "3SharekhanAssign.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user loggs into sharekhan account",
+            "match": {
+              "location": "StepdefAss12to18.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Automate Adding virtual portfolio",
+        "description": "",
+        "id": "sharekhan-operations-automation-feature;automate-adding-virtual-portfolio",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User clicks view detailed portfolio",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_view_detailed_portfolio()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user clicks add virtual portfolio",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_add_virtual_portfolio()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User enter portfolio name as \"Demo\" and click add folder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Demo",
+                  "offset": 30
+                }
+              ],
+              "location": "StepdefAss12to18.user_enter_portfolio_name_as_and_click_add_folder(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User verifies Addded folder",
+            "match": {
+              "location": "StepdefAss12to18.user_verifies_Addded_folder()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User clicks Add script in portfolio",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_Add_script_in_portfolio()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User enters values in script and add the script",
+            "match": {
+              "location": "StepdefAss12to18.user_enters_values_in_script_and_add_the_script()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User Added more scripts with details",
+            "match": {
+              "location": "StepdefAss12to18.user_Added_more_scripts_with_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User logged out of aplication",
+            "match": {
+              "location": "StepdefAss12to18.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Ass12"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user loggs into sharekhan account",
+            "match": {
+              "location": "StepdefAss12to18.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Automate delete scrip",
+        "description": "",
+        "id": "sharekhan-operations-automation-feature;automate-delete-scrip",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user clicks delete scrip",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_delete_scrip()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User validate alert and click ok button",
+            "match": {
+              "location": "StepdefAss12to18.user_validate_alert_and_click_ok_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user validate stock gets deleted",
+            "match": {
+              "location": "StepdefAss12to18.user_validate_stock_gets_deleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User logged out of aplication",
+            "match": {
+              "location": "StepdefAss12to18.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Ass13"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user loggs into sharekhan account",
+            "match": {
+              "location": "StepdefAss12to18.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Automate delete virtual portfolio",
+        "description": "",
+        "id": "sharekhan-operations-automation-feature;automate-delete-virtual-portfolio",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "user clicks virtual portfolio and click delete folder",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_virtual_portfolio_and_click_delete_folder()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User validate folder deleted successfully",
+            "match": {
+              "location": "StepdefAss12to18.user_validate_folder_deleted_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "user validate folder does not appear",
+            "match": {
+              "location": "StepdefAss12to18.user_validate_folder_does_not_appear()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User logged out of aplication",
+            "match": {
+              "location": "StepdefAss12to18.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@Ass14"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user loggs into sharekhan account",
+            "match": {
+              "location": "StepdefAss12to18.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Automate Add watchlist in Marketwatch menu",
+        "description": "",
+        "id": "sharekhan-operations-automation-feature;automate-add-watchlist-in-marketwatch-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "user clicks Marketwatch menu and clicks create watchlist button",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_Marketwatch_menu_and_clicks_create_watchlist_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User created watchist name as \"DEMOWATCH\" and verified",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DEMOWATCH",
+                  "offset": 31
+                }
+              ],
+              "location": "StepdefAss12to18.user_created_watchist_name_as_and_verified(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "user add scrip to watchlist and verified added successfully",
+            "match": {
+              "location": "StepdefAss12to18.user_add_scrip_to_watchlist_and_verified_added_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "user added few more scrips",
+            "match": {
+              "location": "StepdefAss12to18.user_added_few_more_scrips()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "User logged out of aplication",
+            "match": {
+              "location": "StepdefAss12to18.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@Ass15"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user loggs into sharekhan account",
+            "match": {
+              "location": "StepdefAss12to18.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Automate delete scrip from watchlist",
+        "description": "",
+        "id": "sharekhan-operations-automation-feature;automate-delete-scrip-from-watchlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "user clicks Marketwatch menu",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_Marketwatch_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "User sects scrip to delete",
+            "match": {
+              "location": "StepdefAss12to18.user_sects_scrip_to_delete()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "user click delete scrip and verify its deleted",
+            "match": {
+              "location": "StepdefAss12to18.user_click_delete_scrip_and_verify_its_deleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "User logged out of aplication",
+            "match": {
+              "location": "StepdefAss12to18.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 40,
+            "name": "@Ass16"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user loggs into sharekhan account",
+            "match": {
+              "location": "StepdefAss12to18.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "Automate delete watchlist",
+        "description": "",
+        "id": "sharekhan-operations-automation-feature;automate-delete-watchlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "user clicks Marketwatch menu",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_Marketwatch_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "User clicks delete waltchlist",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_delete_waltchlist()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "user verified scrip is deleted",
+            "match": {
+              "location": "StepdefAss12to18.user_verified_scrip_is_deleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "user verified Marketwatch is highlighted and my watchlist is underlined",
+            "match": {
+              "location": "StepdefAss12to18.user_verified_Marketwatch_is_highlighted_and_my_watchlist_is_underlined()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "User logged out of aplication",
+            "match": {
+              "location": "StepdefAss12to18.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 47,
+            "name": "@Ass17"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user loggs into sharekhan account",
+            "match": {
+              "location": "StepdefAss12to18.user_logs_into_sharekhan_account()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Automate My portfolio",
+        "description": "",
+        "id": "sharekhan-operations-automation-feature;automate-my-portfolio",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "User clicks on my portfolio",
+            "match": {
+              "location": "StepdefAss12to18.user_clicks_on_my_portfolio()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "user verified the heading “MY PORTFOLIO”",
+            "match": {
+              "location": "StepdefAss12to18.user_verified_the_heading_MY_PORTFOLIO()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "user verified tabs “SUMMARY”, “EQUITY”, “MUTUAL FUND” \u0026 “VIRTUAL PORTFOLIO”",
+            "match": {
+              "location": "StepdefAss12to18.user_verified_tabs_SUMMARY_EQUITY_MUTUAL_FUND_VIRTUAL_PORTFOLIO()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "User logged out of aplication",
+            "match": {
+              "location": "StepdefAss12to18.user_logged_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 55,
+            "name": "@Ass18"
+          }
+        ]
+      }
+    ],
+    "name": "Sharekhan operations automation feature",
+    "description": "",
+    "id": "sharekhan-operations-automation-feature",
+    "keyword": "Feature",
+    "uri": "4SharekhanAssign12to18.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Ass12-18"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Automate Tooltip text",
+        "description": "",
+        "id": "autmate-sharekhan-process;automate-tooltip-text",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User is on home page after login",
+            "match": {
+              "location": "StepDefAss19to25.user_is_on_home_page_after_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user verify MyWatchList tooltip",
+            "match": {
+              "location": "StepDefAss19to25.user_verify_MyWatchList_tooltip()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user verify MyPortfolio tooltip",
+            "match": {
+              "location": "StepDefAss19to25.user_verify_MyPortfolio_tooltip()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user verify Investment cart",
+            "match": {
+              "location": "StepDefAss19to25.user_verify_Investment_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user verified Alert",
+            "match": {
+              "location": "StepDefAss19to25.user_verified_Alert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User signed out of application",
+            "match": {
+              "location": "StepDefAss19to25.user_signed_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Ass19"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Automate Tooltip text",
+        "description": "",
+        "id": "autmate-sharekhan-process;automate-tooltip-text",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User is on home page after login",
+            "match": {
+              "location": "StepDefAss19to25.user_is_on_home_page_after_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user clicked on Trade now button",
+            "match": {
+              "location": "StepDefAss19to25.user_clicked_on_Trade_now_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user searched and selects Opto Circuits scrip",
+            "match": {
+              "location": "StepDefAss19to25.user_searched_and_selects_Opto_Circuits_scrip()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user entered values in all fields",
+            "match": {
+              "location": "StepDefAss19to25.user_entered_values_in_all_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user click on place order",
+            "match": {
+              "location": "StepDefAss19to25.user_click_on_place_order()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user validate all fields",
+            "match": {
+              "location": "StepDefAss19to25.user_validate_all_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User signed out of application",
+            "match": {
+              "location": "StepDefAss19to25.user_signed_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@Ass20"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Automate LIMIT BUY ORDER",
+        "description": "",
+        "id": "autmate-sharekhan-process;automate-limit-buy-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "User is on home page after login",
+            "match": {
+              "location": "StepDefAss19to25.user_is_on_home_page_after_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "user clicked on Trade now button",
+            "match": {
+              "location": "StepDefAss19to25.user_clicked_on_Trade_now_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "user searched and selects Opto Circuits scrip",
+            "match": {
+              "location": "StepDefAss19to25.user_searched_and_selects_Opto_Circuits_scrip()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "user entered values in all fields",
+            "match": {
+              "location": "StepDefAss19to25.user_entered_values_in_all_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "user click on place order",
+            "match": {
+              "location": "StepDefAss19to25.user_click_on_place_order()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "user validate all fields",
+            "match": {
+              "location": "StepDefAss19to25.user_validate_all_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User signed out of application",
+            "match": {
+              "location": "StepDefAss19to25.user_signed_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@Ass21SWSWSWSW"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Automate place a sell order",
+        "description": "",
+        "id": "autmate-sharekhan-process;automate-place-a-sell-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User is on home page after login",
+            "match": {
+              "location": "StepDefAss19to25.user_is_on_home_page_after_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "user clicked on Trade now button",
+            "match": {
+              "location": "StepDefAss19to25.user_clicked_on_Trade_now_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "user searched and selects Opto Circuits scrip",
+            "match": {
+              "location": "StepDefAss19to25.user_searched_and_selects_Opto_Circuits_scrip()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "user entered values in all fields",
+            "match": {
+              "location": "StepDefAss19to25.user_entered_values_in_all_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "user entered values in all fields with sell",
+            "match": {
+              "location": "StepDefAss19to25.user_entered_values_in_all_fields_with_sell()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "user click on place order",
+            "match": {
+              "location": "StepDefAss19to25.user_click_on_place_order()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "User signed out of application",
+            "match": {
+              "location": "StepDefAss19to25.user_signed_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 33,
+            "name": "@Ass22"
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Automate renaming virtual portfolio",
+        "description": "",
+        "id": "autmate-sharekhan-process;automate-renaming-virtual-portfolio",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "User is on home page after login",
+            "match": {
+              "location": "StepDefAss19to25.user_is_on_home_page_after_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "user clicked detailed view of portfolio",
+            "match": {
+              "location": "StepDefAss19to25.user_clicked_detailed_view_of_portfolio()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "user renamed the virtual portfoilo",
+            "match": {
+              "location": "StepDefAss19to25.user_renamed_the_virtual_portfoilo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "User signed out of application",
+            "match": {
+              "location": "StepDefAss19to25.user_signed_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 43,
+            "name": "@Ass24"
+          }
+        ]
+      },
+      {
+        "line": 51,
+        "name": "Automate renaming watchlist",
+        "description": "",
+        "id": "autmate-sharekhan-process;automate-renaming-watchlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "User is on home page after login",
+            "match": {
+              "location": "StepDefAss19to25.user_is_on_home_page_after_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "user clicked on the Marketwatch menu",
+            "match": {
+              "location": "StepDefAss19to25.user_clicked_on_the_Marketwatch_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "user renamed a watchlist",
+            "match": {
+              "location": "StepDefAss19to25.user_renamed_a_watchlist()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "user verified renamed watchlist",
+            "match": {
+              "location": "StepDefAss19to25.user_verified_renamed_watchlist()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "User signed out of application",
+            "match": {
+              "location": "StepDefAss19to25.user_signed_out_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 50,
+            "name": "@Ass25"
+          }
+        ]
+      }
+    ],
+    "name": "Autmate sharekhan process",
+    "description": "",
+    "id": "autmate-sharekhan-process",
+    "keyword": "Feature",
+    "uri": "5SharekhanAss19to25.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Ass19-25"
+      }
+    ]
+  }
+]

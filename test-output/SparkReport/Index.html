@@ -1,0 +1,2710 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 24, 2021 01:21:46 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 24, 2021 01:21:46 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 24, 2021 01:21:49 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>5</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>5</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>25</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>141</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"For Sharekhan Automation":0.1,"For Sharekhan Menu Automation":0.071,"Sharekhan website Automation":0.196,"Sharekhan operations automation feature":0.142,"Autmate sharekhan process":0.154
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Ass14</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass8</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass12</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass19-25</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass17</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass21</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass7</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass12-18</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass10</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass16</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass15</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass23</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass6</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass25</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass24</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass20</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass9</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass22</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass18</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass19</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Ass13</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>build</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>user</td>
+<td>Rohini</td>
+</tr>
+<tr>
+<td>AppName</td>
+<td>AutomationPractice</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Mac</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 5,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 25,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 141,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Ass14</a><a class="dropdown-item" href="#">@Ass8</a><a class="dropdown-item" href="#">@Ass12</a><a class="dropdown-item" href="#">@Ass19-25</a><a class="dropdown-item" href="#">@Ass11</a><a class="dropdown-item" href="#">@Ass17</a><a class="dropdown-item" href="#">@Ass3</a><a class="dropdown-item" href="#">@Ass4</a><a class="dropdown-item" href="#">@Ass21</a><a class="dropdown-item" href="#">@Ass7</a><a class="dropdown-item" href="#">@Ass2</a><a class="dropdown-item" href="#">@Ass12-18</a><a class="dropdown-item" href="#">@Ass10</a><a class="dropdown-item" href="#">@Ass16</a><a class="dropdown-item" href="#">@Ass15</a><a class="dropdown-item" href="#">@Ass23</a><a class="dropdown-item" href="#">@Ass6</a><a class="dropdown-item" href="#">@Ass25</a><a class="dropdown-item" href="#">@Ass24</a><a class="dropdown-item" href="#">@Ass1</a><a class="dropdown-item" href="#">@Ass20</a><a class="dropdown-item" href="#">@Ass9</a><a class="dropdown-item" href="#">@Ass22</a><a class="dropdown-item" href="#">@Ass18</a><a class="dropdown-item" href="#">@Ass5</a><a class="dropdown-item" href="#">@Ass19</a><a class="dropdown-item" href="#">@Ass13</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">For Sharekhan Automation</p>
+            <p class="text-sm">
+              <span>01:21:48 AM</span> / <span>00:00:00:100</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">For Sharekhan Automation</h5>
+<span class='badge badge-success'>11.24.2021 01:21:48</span>
+<span class='badge badge-danger'>11.24.2021 01:21:48</span>
+<span class='badge badge-default'>00:00:00:100</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify sharekhan launched in chrome</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_open_chrome()">
+                <span>Given I open chrome</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_entered_url_as_in_browser(java.lang.String)">
+                <span>Then I entered url as "https://www.sharekhan.com/" in browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_verify_Title_and_Menu_Items()">
+                <span>Then I verify Title and Menu Items</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_verify_Lgin_Trade_button()">
+                <span>Then I verify Lgin/Trade button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_close_the_browser()">
+                <span>Then I close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>To automate Sharekhan main menu</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_open_chrome()">
+                <span>Given I open chrome</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_entered_url_as_in_browser(java.lang.String)">
+                <span>Then I entered url as "https://www.sharekhan.com/" in browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_click_on_main_menu()">
+                <span>Then I click on main menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_verify_Main_menu_options()">
+                <span>And I verify Main menu options</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_close_the_browser()">
+                <span>Then I close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">For Sharekhan Menu Automation</p>
+            <p class="text-sm">
+              <span>01:21:48 AM</span> / <span>00:00:00:071</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">For Sharekhan Menu Automation</h5>
+<span class='badge badge-success'>11.24.2021 01:21:48</span>
+<span class='badge badge-danger'>11.24.2021 01:21:48</span>
+<span class='badge badge-default'>00:00:00:071</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Verify sharekhan menu displays after mouse hover</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_open_chrome()">
+                <span>Given I open chrome</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_entered_url_as_in_browser(java.lang.String)">
+                <span>Then I entered url as "https://www.sharekhan.com/" in browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_Mouse_hover_on_Market_New_to_Market()">
+                <span>Then I Mouse hover on Market,New to Market</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_verify_Market_new_to_market_menu_options()">
+                <span>Then I verify Market,new to market menu options</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_mouse_Hover_on_Super_Investor_and_Active_trader()">
+                <span>Then I mouse Hover on Super Investor and Active trader</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_verify_Super_Investor_and_Active_trader_menu_options()">
+                <span>Then I verify Super Investor and Active trader menu options</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_close_the_browser()">
+                <span>Then I close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Verify sharekhan Login</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_open_chrome()">
+                <span>Given I open chrome</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_entered_url_as_in_browser(java.lang.String)">
+                <span>Then I entered url as "https://www.sharekhan.com/" in browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_Entered_loginid()">
+                <span>Then I Entered loginid</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_click_on_next_and_entered_password_as(java.lang.String)">
+                <span>Then I click on next and entered password as "Bangar@2"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_verify_All_menus()">
+                <span>Then I verify All menus</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanLaunchStepDef.i_close_the_browser()">
+                <span>Then I close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Sharekhan website Automation</p>
+            <p class="text-sm">
+              <span>01:21:48 AM</span> / <span>00:00:00:196</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Sharekhan website Automation</h5>
+<span class='badge badge-success'>11.24.2021 01:21:48</span>
+<span class='badge badge-danger'>11.24.2021 01:21:48</span>
+<span class='badge badge-default'>00:00:00:196</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Validate Account Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logs_into_sharekhan_account()">
+                <span>Given user logs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_Click_on_Account_menu_Button()">
+                <span>Then User Click on Account menu Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.he_verified_all_menus_on_account_page()">
+                <span>Then he verified all menus on account page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logged_out_of_application()">
+                <span>Then User logged out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>Validate Marketwatch Menu Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logs_into_sharekhan_account()">
+                <span>Given user logs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_Click_on_MarketWatch_menu()">
+                <span>Then User Click on MarketWatch menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_verified_MyWatchlist()">
+                <span>Then User verified MyWatchlist</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_verified_Option_Chain()">
+                <span>Then User verified Option Chain</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_verified_MyWatchlist_is_highlighted()">
+                <span>Then User verified MarketWatch is highlighted</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logged_out_of_application()">
+                <span>Then User logged out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Validate Trade Now Menu Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logs_into_sharekhan_account()">
+                <span>Given user logs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_Click_on_Trade_Now_menu()">
+                <span>Then User Click on Trade Now menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_verified_Trade_now_page_s_menu_bar()">
+                <span>Then User verified Trade now page's menu bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_verified_all_fields_on_trade_now_page()">
+                <span>Then User verified all fields on trade now page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_verified_All_default_options()">
+                <span>Then User verified All default options</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logged_out_of_application()">
+                <span>Then User logged out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>Validate Reports Menu Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logs_into_sharekhan_account()">
+                <span>Given user logs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_Click_on_Reports_menu()">
+                <span>Then User Click on Reports menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_validate_deafault_options()">
+                <span>Then User validate deafault options</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_verifies_headers_and_all_links_are_displayed()">
+                <span>Then User verifies headers and all links are displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logged_out_of_application()">
+                <span>Then User logged out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>Automate Fund Transfer</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logs_into_sharekhan_account()">
+                <span>Given user logs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_Click_on_Account_menu_Button()">
+                <span>Then User Click on Account menu Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_enters_rs_to_transfer_the_fund(int)">
+                <span>Then User enters 10 rs to transfer the fund</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_selects_netbanking_as_payment_mode_and_clicked_submit_button()">
+                <span>Then User selects netbanking as payment mode and clicked submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_enters_details_on_bank_login_page_and_transefered_the_cash()">
+                <span>Then User enters details on bank login page and transefered the cash</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logged_out_of_application()">
+                <span>Then User logged out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>Automate Cash Transfer Options</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logs_into_sharekhan_account()">
+                <span>Given user logs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_Click_on_Account_menu_Button()">
+                <span>Then User Click on Account menu Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_verifies_select_segment_s_default_value()">
+                <span>Then User verifies select segment's default value</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_selects_Bank_to_IPO_cash_transfer()">
+                <span>Then User selects Bank to IPO cash transfer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_selects_Bank_to_mutual_fund_cash_transfer()">
+                <span>Then User selects Bank to mutual fund cash transfer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logged_out_of_application()">
+                <span>Then User logged out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="70"><span class="badge log pass-bg mr-2">Pass</span>Validate select segment of Cash Transfer</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logs_into_sharekhan_account()">
+                <span>Given user logs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_Click_on_Account_menu_Button()">
+                <span>Then User Click on Account menu Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_verifies_all_select_segment_s_drop_down_values()">
+                <span>Then User verifies all select segment's drop down values</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.SharekhanAssignSteps.user_logged_out_of_application()">
+                <span>Then User logged out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="75"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Sharekhan operations automation feature</p>
+            <p class="text-sm">
+              <span>01:21:49 AM</span> / <span>00:00:00:142</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Sharekhan operations automation feature</h5>
+<span class='badge badge-success'>11.24.2021 01:21:49</span>
+<span class='badge badge-danger'>11.24.2021 01:21:49</span>
+<span class='badge badge-default'>00:00:00:142</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=75</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>Automate Adding virtual portfolio</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logs_into_sharekhan_account()">
+                <span>Given user loggs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_view_detailed_portfolio()">
+                <span>When User clicks view detailed portfolio</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_add_virtual_portfolio()">
+                <span>And user clicks add virtual portfolio</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_enter_portfolio_name_as_and_click_add_folder(java.lang.String)">
+                <span>Then User enter portfolio name as "Demo" and click add folder</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_verifies_Addded_folder()">
+                <span>Then User verifies Addded folder</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_Add_script_in_portfolio()">
+                <span>And User clicks Add script in portfolio</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_enters_values_in_script_and_add_the_script()">
+                <span>Then User enters values in script and add the script</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_Added_more_scripts_with_details()">
+                <span>Then User Added more scripts with details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logged_out_of_application()">
+                <span>Then User logged out of aplication</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log pass-bg mr-2">Pass</span>Automate delete scrip</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logs_into_sharekhan_account()">
+                <span>Given user loggs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_delete_scrip()">
+                <span>Then user clicks delete scrip</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_validate_alert_and_click_ok_button()">
+                <span>Then User validate alert and click ok button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_validate_stock_gets_deleted()">
+                <span>Then user validate stock gets deleted</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logged_out_of_application()">
+                <span>Then User logged out of aplication</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="92"><span class="badge log pass-bg mr-2">Pass</span>Automate delete virtual portfolio</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logs_into_sharekhan_account()">
+                <span>Given user loggs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_virtual_portfolio_and_click_delete_folder()">
+                <span>Then user clicks virtual portfolio and click delete folder</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_validate_folder_deleted_successfully()">
+                <span>Then User validate folder deleted successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_validate_folder_does_not_appear()">
+                <span>Then user validate folder does not appear</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logged_out_of_application()">
+                <span>Then User logged out of aplication</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="98"><span class="badge log pass-bg mr-2">Pass</span>Automate Add watchlist in Marketwatch menu</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logs_into_sharekhan_account()">
+                <span>Given user loggs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_Marketwatch_menu_and_clicks_create_watchlist_button()">
+                <span>Then user clicks Marketwatch menu and clicks create watchlist button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_created_watchist_name_as_and_verified(java.lang.String)">
+                <span>Then User created watchist name as "DEMOWATCH" and verified</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_add_scrip_to_watchlist_and_verified_added_successfully()">
+                <span>Then user add scrip to watchlist and verified added successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_added_few_more_scrips()">
+                <span>Then user added few more scrips</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logged_out_of_application()">
+                <span>Then User logged out of aplication</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="105"><span class="badge log pass-bg mr-2">Pass</span>Automate delete scrip from watchlist</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logs_into_sharekhan_account()">
+                <span>Given user loggs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_Marketwatch_menu()">
+                <span>Then user clicks Marketwatch menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_sects_scrip_to_delete()">
+                <span>Then User sects scrip to delete</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_click_delete_scrip_and_verify_its_deleted()">
+                <span>Then user click delete scrip and verify its deleted</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logged_out_of_application()">
+                <span>Then User logged out of aplication</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="111"><span class="badge log pass-bg mr-2">Pass</span>Automate delete watchlist</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logs_into_sharekhan_account()">
+                <span>Given user loggs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_Marketwatch_menu()">
+                <span>Then user clicks Marketwatch menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_delete_waltchlist()">
+                <span>Then User clicks delete waltchlist</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_verified_scrip_is_deleted()">
+                <span>Then user verified scrip is deleted</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_verified_Marketwatch_is_highlighted_and_my_watchlist_is_underlined()">
+                <span>Then user verified Marketwatch is highlighted and my watchlist is underlined</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logged_out_of_application()">
+                <span>Then User logged out of aplication</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="118"><span class="badge log pass-bg mr-2">Pass</span>Automate My portfolio</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logs_into_sharekhan_account()">
+                <span>Given user loggs into sharekhan account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_clicks_on_my_portfolio()">
+                <span>Then User clicks on my portfolio</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_verified_the_heading_MY_PORTFOLIO()">
+                <span>Then user verified the heading “MY PORTFOLIO”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_verified_tabs_SUMMARY_EQUITY_MUTUAL_FUND_VIRTUAL_PORTFOLIO()">
+                <span>Then user verified tabs “SUMMARY”, “EQUITY”, “MUTUAL FUND” & “VIRTUAL PORTFOLIO”</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepdefAss12to18.user_logged_out_of_application()">
+                <span>Then User logged out of aplication</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="124"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Autmate sharekhan process</p>
+            <p class="text-sm">
+              <span>01:21:49 AM</span> / <span>00:00:00:154</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Autmate sharekhan process</h5>
+<span class='badge badge-success'>11.24.2021 01:21:49</span>
+<span class='badge badge-danger'>11.24.2021 01:21:49</span>
+<span class='badge badge-default'>00:00:00:154</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=124</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="125"><span class="badge log pass-bg mr-2">Pass</span>Automate Tooltip text</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_is_on_home_page_after_login()">
+                <span>Given User is on home page after login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_verify_MyWatchList_tooltip()">
+                <span>Then user verify MyWatchList tooltip</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_verify_MyPortfolio_tooltip()">
+                <span>Then user verify MyPortfolio tooltip</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_verify_Investment_cart()">
+                <span>Then user verify Investment cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_verified_Alert()">
+                <span>Then user verified Alert</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_signed_out_of_application()">
+                <span>Then User signed out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="132"><span class="badge log pass-bg mr-2">Pass</span>Automate place a buy order</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_is_on_home_page_after_login()">
+                <span>Given User is on home page after login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_clicked_on_Trade_now_button()">
+                <span>Then user clicked on Trade now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_searched_and_selects_Opto_Circuits_scrip()">
+                <span>Then user searched and selects Opto Circuits scrip</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_entered_values_in_all_fields()">
+                <span>Then user entered values in all fields</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_click_on_place_order()">
+                <span>Then user click on place order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_validate_all_fields()">
+                <span>Then user validate all fields</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_signed_out_of_application()">
+                <span>Then User signed out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="140"><span class="badge log pass-bg mr-2">Pass</span>Automate LIMIT BUY ORDER</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_is_on_home_page_after_login()">
+                <span>Given User is on home page after login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_clicked_on_Trade_now_button()">
+                <span>Then user clicked on Trade now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_searched_and_selects_idea_scrip()">
+                <span>Then user searched and selects idea scrip</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_entered_limit_price_to_buy_scrip()">
+                <span>Then user entered limit price to buy scrip</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_click_on_place_buy_order()">
+                <span>Then user click on place buy order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_signed_out_of_application()">
+                <span>Then User signed out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="147"><span class="badge log pass-bg mr-2">Pass</span>Automate place a sell order</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_is_on_home_page_after_login()">
+                <span>Given User is on home page after login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_clicked_on_Trade_now_button()">
+                <span>Then user clicked on Trade now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_searched_and_selects_Opto_Circuits_scrip()">
+                <span>Then user searched and selects Opto Circuits scrip</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_entered_values_in_all_fields()">
+                <span>Then user entered values in all fields</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_entered_values_in_all_fields_with_sell()">
+                <span>Then user entered values in all fields with sell</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_click_on_place_order()">
+                <span>Then user click on place order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_signed_out_of_application()">
+                <span>Then User signed out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="155"><span class="badge log pass-bg mr-2">Pass</span>Automate LIMIT SELL ORDER</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_is_on_home_page_after_login()">
+                <span>Given User is on home page after login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_clicked_on_Trade_now_button()">
+                <span>Then user clicked on Trade now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_searched_and_selects_idea_scrip()">
+                <span>Then user searched and selects idea scrip</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_entered_limit_price_to_sell_scrip()">
+                <span>Then user entered limit price to sell scrip</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_click_on_place_sell_order()">
+                <span>Then user click on place sell order</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="161"><span class="badge log pass-bg mr-2">Pass</span>Automate renaming virtual portfolio</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_is_on_home_page_after_login()">
+                <span>Given User is on home page after login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_clicked_detailed_view_of_portfolio()">
+                <span>Then user clicked detailed view of portfolio</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_renamed_the_virtual_portfoilo()">
+                <span>Then user renamed the virtual portfoilo</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_signed_out_of_application()">
+                <span>Then User signed out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="166"><span class="badge log pass-bg mr-2">Pass</span>Automate renaming watchlist</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_is_on_home_page_after_login()">
+                <span>Given User is on home page after login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_clicked_on_the_Marketwatch_menu()">
+                <span>Then user clicked on the Marketwatch menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_renamed_a_watchlist()">
+                <span>Then user renamed a watchlist</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_verified_renamed_watchlist()">
+                <span>Then user verified renamed watchlist</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDefAss19to25.user_signed_out_of_application()">
+                <span>Then User signed out of application</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">27</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass14</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass14</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='92'>Automate delete virtual portfolio</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate delete virtual portfolio</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass8</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass8</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='50'>Validate Reports Menu Page</a>
+<div class="">
+<span class="badge badge-default">Sharekhan website Automation.Validate Reports Menu Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass12</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass12</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='76'>Automate Adding virtual portfolio</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate Adding virtual portfolio</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@Ass19-25</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass19-25</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='125'>Automate Tooltip text</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate Tooltip text</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='132'>Automate place a buy order</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate place a buy order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='140'>Automate LIMIT BUY ORDER</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate LIMIT BUY ORDER</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='147'>Automate place a sell order</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate place a sell order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='155'>Automate LIMIT SELL ORDER</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate LIMIT SELL ORDER</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='161'>Automate renaming virtual portfolio</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate renaming virtual portfolio</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='166'>Automate renaming watchlist</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate renaming watchlist</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass11</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass11</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='70'>Validate select segment of Cash Transfer</a>
+<div class="">
+<span class="badge badge-default">Sharekhan website Automation.Validate select segment of Cash Transfer</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass17</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass17</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='111'>Automate delete watchlist</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate delete watchlist</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass3</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass3</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>Verify sharekhan menu displays after mouse hover</a>
+<div class="">
+<span class="badge badge-default">For Sharekhan Menu Automation.Verify sharekhan menu displays after mouse hover</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass4</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass4</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='23'>Verify sharekhan Login</a>
+<div class="">
+<span class="badge badge-default">For Sharekhan Menu Automation.Verify sharekhan Login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass21</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass21</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='140'>Automate LIMIT BUY ORDER</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate LIMIT BUY ORDER</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass7</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass7</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='43'>Validate Trade Now Menu Page</a>
+<div class="">
+<span class="badge badge-default">Sharekhan website Automation.Validate Trade Now Menu Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass2</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass2</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>To automate Sharekhan main menu</a>
+<div class="">
+<span class="badge badge-default">For Sharekhan Automation.To automate Sharekhan main menu</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@Ass12-18</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass12-18</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='76'>Automate Adding virtual portfolio</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate Adding virtual portfolio</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='86'>Automate delete scrip</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate delete scrip</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='92'>Automate delete virtual portfolio</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate delete virtual portfolio</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='98'>Automate Add watchlist in Marketwatch menu</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate Add watchlist in Marketwatch menu</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='105'>Automate delete scrip from watchlist</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate delete scrip from watchlist</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='111'>Automate delete watchlist</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate delete watchlist</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='118'>Automate My portfolio</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate My portfolio</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass10</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass10</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='63'>Automate Cash Transfer Options</a>
+<div class="">
+<span class="badge badge-default">Sharekhan website Automation.Automate Cash Transfer Options</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass16</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass16</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='105'>Automate delete scrip from watchlist</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate delete scrip from watchlist</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass15</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass15</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='98'>Automate Add watchlist in Marketwatch menu</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate Add watchlist in Marketwatch menu</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass23</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass23</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='155'>Automate LIMIT SELL ORDER</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate LIMIT SELL ORDER</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass6</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass6</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='36'>Validate Marketwatch Menu Page</a>
+<div class="">
+<span class="badge badge-default">Sharekhan website Automation.Validate Marketwatch Menu Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass25</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass25</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='166'>Automate renaming watchlist</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate renaming watchlist</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass24</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass24</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='161'>Automate renaming virtual portfolio</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate renaming virtual portfolio</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass1</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify sharekhan launched in chrome</a>
+<div class="">
+<span class="badge badge-default">For Sharekhan Automation.Verify sharekhan launched in chrome</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass20</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass20</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='132'>Automate place a buy order</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate place a buy order</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass9</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass9</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='56'>Automate Fund Transfer</a>
+<div class="">
+<span class="badge badge-default">Sharekhan website Automation.Automate Fund Transfer</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass22</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass22</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='147'>Automate place a sell order</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate place a sell order</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass18</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass18</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='118'>Automate My portfolio</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate My portfolio</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass5</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass5</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:48 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='31'>Validate Account Page</a>
+<div class="">
+<span class="badge badge-default">Sharekhan website Automation.Validate Account Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass19</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass19</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='124' id='125'>Automate Tooltip text</a>
+<div class="">
+<span class="badge badge-default">Autmate sharekhan process.Automate Tooltip text</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Ass13</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ass13</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='75' id='86'>Automate delete scrip</a>
+<div class="">
+<span class="badge badge-default">Sharekhan operations automation feature.Automate delete scrip</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
